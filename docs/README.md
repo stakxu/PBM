@@ -43,26 +43,17 @@
 1. 克隆代码并安装依赖:
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/stakxu/PBM.git
 cd hub
 npm install
 ```
 
-2. 配置环境变量:
+2. 配置文件:
 
 ```bash
-cp .env.example .env
+hub/config.yaml
 ```
 
-编辑 .env 文件:
-
-```
-HUB_PORT=3000
-TCP_PORT=3001
-AUTH_KEY=your-secret-key
-LOG_LEVEL=info
-DB_PATH=data/hub.db
-```
 
 3. 启动 Hub:
 
@@ -75,7 +66,7 @@ npm run dev
 1. 克隆代码:
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/stakxu/PBM.git
 cd agent
 ```
 
