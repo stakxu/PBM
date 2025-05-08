@@ -1,0 +1,31 @@
+hub:
+  # Hub 服务器地址,支持 IPv4、IPv6 或域名
+  address: "127.0.0.1"
+  # 备用地址列表,当主地址连接失败时按顺序尝试
+  backup_addresses: []
+  # 服务端口
+  port: 3001
+  # 连接协议,可选值: ipv4, ipv6, auto
+  protocol: "ipv4"
+
+auth:
+  # 认证密钥
+  key: "default-key-not-secure"
+
+agent:
+  # Agent 别名,用于标识和区分不同的 Agent
+  alias: "test-agent"
+  # 系统信息上报间隔（秒）
+  systemInfoInterval: 5
+  # 静态信息重新上报时间（小时）,默认24小时
+  staticInfoInterval: 24
+  # 心跳间隔（秒）
+  heartbeatInterval: 30
+  # 重连间隔（秒）
+  reconnectInterval: 5
+
+log:
+  # 日志级别
+  level: "info"
+  # 日志文件路径
+  path: "logs/agent.log"

@@ -1,0 +1,27 @@
+hub:
+  # Hub 服务器地址,支持 IPv4、IPv6 或域名
+  address: "0.0.0.0"
+  # IPv6 地址,设置为 :: 监听所有 IPv6 地址
+  address6: "::"
+  # Hub 服务器端口
+  port: 3000
+  # TCP 服务端口
+  tcpPort: 3001
+  # 是否启用 IPv6
+  enableIPv6: false
+
+auth:
+  # 认证密钥
+  key: "default-key-not-secure"
+
+log:
+  # 日志级别改为 debug 以显示更多信息
+  level: "debug"
+  # 日志文件路径
+  path: "logs/hub.log"
+  # 日志时间格式
+  timeFormat: "YYYY-MM-DD HH:mm:ss.SSS"
+
+db:
+  # 数据库文件路径
+  path: "data/hub.db"
